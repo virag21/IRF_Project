@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRF_project_GXMRLU", "IRF_project_GXMRLU\IRF_project_GXMRLU.csproj", "{8699F3DC-D0B4-46C9-BF20-EAD0688E6886}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8699F3DC-D0B4-46C9-BF20-EAD0688E6886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8699F3DC-D0B4-46C9-BF20-EAD0688E6886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8699F3DC-D0B4-46C9-BF20-EAD0688E6886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8699F3DC-D0B4-46C9-BF20-EAD0688E6886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0585B335-94C0-4E0C-B3EE-425B2B2DE8ED}
+	EndGlobalSection
+EndGlobal
