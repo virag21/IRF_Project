@@ -9,3 +9,4 @@ C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\o
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.exe
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.pdb
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.SendGiftsUserControl.resources
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.UploadDataUserControl.resources

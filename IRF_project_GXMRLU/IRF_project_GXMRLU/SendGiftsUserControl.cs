@@ -16,5 +16,21 @@ namespace IRF_project_GXMRLU
         {
             InitializeComponent();
         }
+
+        private void addNew_Click(object sender, EventArgs e)
+        {
+            ComboBox cb = new ComboBox();
+            Controls.Add(cb);
+            cb.Width = comboBox1.Width;
+            cb.Top = addNew.Top + 25;
+            cb.Left = comboBox1.Left;
+            NumericUpDown nu = new NumericUpDown();
+            Controls.Add(nu);
+            nu.Width = numericUpDown1.Width;
+            nu.Top = addNew.Top + 25;
+            nu.Left = numericUpDown1.Left;
+            addNew.Top = addNew.Top + 25;
+
+        }
     }
 }
