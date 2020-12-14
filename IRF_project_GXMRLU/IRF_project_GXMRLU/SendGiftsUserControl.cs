@@ -32,5 +32,10 @@ namespace IRF_project_GXMRLU
             addNew.Top = addNew.Top + 25;
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Successful");
+        }
     }
 }
