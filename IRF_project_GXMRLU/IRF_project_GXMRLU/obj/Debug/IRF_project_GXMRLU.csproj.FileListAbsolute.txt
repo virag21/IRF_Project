@@ -1,0 +1,11 @@
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\bin\Debug\IRF_project_GXMRLU.exe.config
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\bin\Debug\IRF_project_GXMRLU.exe
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\bin\Debug\IRF_project_GXMRLU.pdb
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.csprojAssemblyReference.cache
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.Form1.resources
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.Properties.Resources.resources
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.csproj.GenerateResource.cache
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.csproj.CoreCompileInputs.cache
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.exe
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.pdb
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.SendGiftsUserControl.resources

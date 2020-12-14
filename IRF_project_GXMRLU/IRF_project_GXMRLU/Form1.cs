@@ -16,5 +16,20 @@ namespace IRF_project_GXMRLU
         {
             InitializeComponent();
         }
+
+        private void sendGifts_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            SendGiftsUserControl sg = new SendGiftsUserControl();
+            panel1.Controls.Add(sg);
+
+        }
+
+        private void uploadData_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            SendGiftsUserControl sg = new SendGiftsUserControl();
+            panel1.Controls.Add(sg);
+        }
     }
 }
