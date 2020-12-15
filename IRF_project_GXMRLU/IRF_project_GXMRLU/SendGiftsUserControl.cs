@@ -37,5 +37,12 @@ namespace IRF_project_GXMRLU
         {
             MessageBox.Show("Successful");
         }
+
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
