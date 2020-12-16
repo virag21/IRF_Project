@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IRF_project_GXMRLU
 {
-    class Order
+   public class Order
     {
         public string Sender { get; set; }
         public string SenderPhone { get; set; }

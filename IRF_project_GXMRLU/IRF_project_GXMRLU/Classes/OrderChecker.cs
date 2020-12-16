@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace IRF_project_GXMRLU
 {
-    class OrderChecker
+   public class OrderChecker
     {
+        public OrderChecker()
+        {
+
+        }
         public Order Register(string senderphone, string senderemail)
         {
             if (!ValidateEmail(senderemail))
