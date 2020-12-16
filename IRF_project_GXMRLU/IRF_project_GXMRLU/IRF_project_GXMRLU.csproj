@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardCreatorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardCreatorUC.Designer.cs">
+      <DependentUpon>CardCreatorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Tree.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +77,9 @@
     <Compile Include="UploadDataUserControl.Designer.cs">
       <DependentUpon>UploadDataUserControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CardCreatorUC.resx">
+      <DependentUpon>CardCreatorUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,5 +140,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

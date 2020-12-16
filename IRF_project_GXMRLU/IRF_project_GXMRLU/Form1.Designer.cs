@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.sendGifts = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.sendLetterBtn = new System.Windows.Forms.Button();
             this.uploadData = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.sendLetterBtn);
             this.panel1.Controls.Add(this.uploadData);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox2);
@@ -64,15 +64,15 @@
             this.panel1.Size = new System.Drawing.Size(825, 380);
             this.panel1.TabIndex = 5;
             // 
-            // button2
+            // sendLetterBtn
             // 
-            this.button2.Location = new System.Drawing.Point(274, 245);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(249, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.sendLetterBtn.Location = new System.Drawing.Point(274, 245);
+            this.sendLetterBtn.Name = "sendLetterBtn";
+            this.sendLetterBtn.Size = new System.Drawing.Size(249, 35);
+            this.sendLetterBtn.TabIndex = 8;
+            this.sendLetterBtn.Text = "Write a letter to Santa!";
+            this.sendLetterBtn.UseVisualStyleBackColor = true;
+            this.sendLetterBtn.Click += new System.EventHandler(this.sendLetterBtn_Click);
             // 
             // uploadData
             // 
@@ -80,7 +80,7 @@
             this.uploadData.Name = "uploadData";
             this.uploadData.Size = new System.Drawing.Size(249, 35);
             this.uploadData.TabIndex = 6;
-            this.uploadData.Text = "Upload Data";
+            this.uploadData.Text = "Upload Order Data";
             this.uploadData.UseVisualStyleBackColor = true;
             this.uploadData.Click += new System.EventHandler(this.uploadData_Click);
             // 
@@ -128,7 +128,7 @@
         private System.Windows.Forms.Button uploadData;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button sendLetterBtn;
     }
 }
 

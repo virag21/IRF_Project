@@ -32,11 +32,11 @@ namespace IRF_project_GXMRLU
             panel1.Controls.Add(up);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void sendLetterBtn_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            UploadDataUserControl cs = new UploadDataUserControl();
-            panel1.Controls.Add(cs);
+            CardCreatorUC cc = new CardCreatorUC();
+            panel1.Controls.Add(cc);
         }
     }
 }
