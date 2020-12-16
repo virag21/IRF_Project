@@ -74,6 +74,7 @@ namespace IRF_project_GXMRLU
                 xlSheet = xlWB.ActiveSheet;
 
                 CreateTable();
+                FormatTable();
 
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
@@ -89,7 +90,7 @@ namespace IRF_project_GXMRLU
                 xlApp = null;
             }
 
-            FormatTable();
+
 
         }
 
@@ -148,15 +149,17 @@ namespace IRF_project_GXMRLU
         {
             Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
             headerRange.Font.Bold = true;
-            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
             headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
             headerRange.EntireColumn.AutoFit();
-            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.Navy;
+            headerRange.Font.Color = Color.White;
             headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
 
             Excel.Range fullRange = xlSheet.get_Range(GetCell(1, 1), GetCell(xlSheet.UsedRange.Rows.Count, xlSheet.UsedRange.Columns.Count));
             fullRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
-            fullRange.Interior.Color = Color.Wheat;
+            
+            Excel.Range contentRange= xlSheet.get_Range(GetCell(2, 1), GetCell(xlSheet.UsedRange.Rows.Count-1, xlSheet.UsedRange.Columns.Count));
+            contentRange.Interior.Color = Color.LightGray;
 
         }
 

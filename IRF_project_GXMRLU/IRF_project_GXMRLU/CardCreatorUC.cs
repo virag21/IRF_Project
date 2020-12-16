@@ -39,6 +39,7 @@ namespace IRF_project_GXMRLU
         private void sendBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Thank you, Santa got your letter! Merry Christmas!");
+            textBox1.Text = "Dear Santa!";
         }
 
         private void backBtn_Click(object sender, EventArgs e)

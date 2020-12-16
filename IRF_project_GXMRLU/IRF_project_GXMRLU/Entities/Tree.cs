@@ -16,8 +16,8 @@ namespace IRF_project_GXMRLU.Entities
         public Tree()
         {
             AutoSize = false;
-            Width = 500;
-            Height = 500;
+            Width = 60;
+            Height = 60;
             Paint += Ball_Paint;
             Top = 10;
             Left = 100;
@@ -61,8 +61,6 @@ namespace IRF_project_GXMRLU.Entities
             pnt3[2].X = 0;
             pnt3[2].Y = 50;
 
-            //g.FillEllipse(new SolidBrush(Color.Blue), 20, 20, 100, 100);
-            //g.FillEllipse(new SolidBrush(Color.Yellow), 45, 45, 50, 50);
             g.FillPolygon(new SolidBrush(Color.Green), pnt);
             g.FillPolygon(new SolidBrush(Color.Green), pnt2);
             g.FillPolygon(new SolidBrush(Color.Green), pnt3);

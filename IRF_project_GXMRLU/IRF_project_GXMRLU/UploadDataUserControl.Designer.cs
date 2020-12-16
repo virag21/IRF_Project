@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UploadDataUserControl));
             this.chooseFile = new System.Windows.Forms.Button();
             this.exportBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -37,7 +38,9 @@
             // 
             // chooseFile
             // 
-            this.chooseFile.Location = new System.Drawing.Point(21, 149);
+            this.chooseFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.chooseFile.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.chooseFile.Location = new System.Drawing.Point(59, 88);
             this.chooseFile.Name = "chooseFile";
             this.chooseFile.Size = new System.Drawing.Size(158, 41);
             this.chooseFile.TabIndex = 0;
@@ -47,9 +50,11 @@
             // 
             // exportBtn
             // 
-            this.exportBtn.Location = new System.Drawing.Point(21, 216);
+            this.exportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exportBtn.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.exportBtn.Location = new System.Drawing.Point(59, 222);
             this.exportBtn.Name = "exportBtn";
-            this.exportBtn.Size = new System.Drawing.Size(158, 36);
+            this.exportBtn.Size = new System.Drawing.Size(158, 41);
             this.exportBtn.TabIndex = 1;
             this.exportBtn.Text = "Excel export";
             this.exportBtn.UseVisualStyleBackColor = true;
@@ -62,15 +67,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(224, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(273, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(598, 373);
+            this.dataGridView1.Size = new System.Drawing.Size(549, 373);
             this.dataGridView1.TabIndex = 2;
             // 
             // backBtn
             // 
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backBtn.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.backBtn.Location = new System.Drawing.Point(4, 4);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(65, 34);
@@ -83,6 +90,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.exportBtn);

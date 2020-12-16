@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCreatorUC));
             this.treeBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.sendBtn = new System.Windows.Forms.Button();
@@ -36,9 +37,11 @@
             // 
             // treeBtn
             // 
-            this.treeBtn.Location = new System.Drawing.Point(611, 100);
+            this.treeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.treeBtn.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.treeBtn.Location = new System.Drawing.Point(578, 100);
             this.treeBtn.Name = "treeBtn";
-            this.treeBtn.Size = new System.Drawing.Size(146, 36);
+            this.treeBtn.Size = new System.Drawing.Size(179, 36);
             this.treeBtn.TabIndex = 0;
             this.treeBtn.Text = "Christmas Tree";
             this.treeBtn.UseVisualStyleBackColor = true;
@@ -46,6 +49,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox1.Location = new System.Drawing.Point(50, 152);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -55,6 +59,8 @@
             // 
             // sendBtn
             // 
+            this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.sendBtn.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sendBtn.Location = new System.Drawing.Point(611, 270);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(146, 36);
@@ -65,6 +71,8 @@
             // 
             // backBtn
             // 
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backBtn.Font = new System.Drawing.Font("Bookman Old Style", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.backBtn.Location = new System.Drawing.Point(3, 3);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(65, 34);
@@ -77,6 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.sendBtn);
             this.Controls.Add(this.textBox1);
