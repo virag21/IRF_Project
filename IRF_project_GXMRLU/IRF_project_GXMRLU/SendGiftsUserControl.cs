@@ -23,8 +23,22 @@ namespace IRF_project_GXMRLU
             try
             {
                 _controller.Register(
+                    senderTxt.Text,
                     senderPhoneTxt.Text,
-                    senderEmailTxt.Text);
+                    senderEmailTxt.Text,
+                    nameTxt.Text,
+                    addressTxt.Text,
+                    (string)giftCombo.SelectedItem,
+                    (int)quantityUpDown.Value
+                    );
+                MessageBox.Show("Successful!");
+                senderTxt.Text = "";
+                senderPhoneTxt.Text = "";
+                senderEmailTxt.Text = "";
+                nameTxt.Text = "";
+                addressTxt.Text = "";
+                giftCombo.SelectedItem = default;
+                quantityUpDown.Value = default;
             }
             catch (Exception ex)
             {

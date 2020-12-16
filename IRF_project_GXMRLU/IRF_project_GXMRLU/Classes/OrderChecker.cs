@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace IRF_project_GXMRLU
 {
-   public class OrderChecker
+    public class OrderChecker
     {
         public OrderChecker()
         {
 
         }
-        public Order Register(string senderphone, string senderemail)
+        public Order Register(string sender, string senderphone, string senderemail, string name, string address, string gift, int quantity)
         {
             if (!ValidateEmail(senderemail))
                 throw new ValidationException(
@@ -26,8 +26,13 @@ namespace IRF_project_GXMRLU
 
             var order = new Order()
             {
+                Sender = sender,
                 SenderEmail = senderemail,
                 SenderPhone = senderphone,
+                Name = name,
+                Address = address,
+                Gift = gift,
+                Quantity = quantity
             };
 
             return order;
