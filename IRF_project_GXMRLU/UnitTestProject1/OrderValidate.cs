@@ -29,5 +29,26 @@ namespace UnitTestProject1
             Assert.AreEqual(expectedResult, actualResult);
         }
 
+
+        [
+            Test,
+            TestCase("+35501061811", false),
+            TestCase("0625110157", false),
+            TestCase("irf.uni-corvinus.hu", false),
+            TestCase("+36201071511", true),
+            TestCase("0613160510", true),
+            TestCase("06707563951", true)
+            ]
+        public void TestValidatePhone(string phone, bool expectedResult)
+        {
+            var orderchecker = new OrderChecker();
+
+            // Act
+            var actualResult = orderchecker.ValidatePhone(phone);
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
     }
 }

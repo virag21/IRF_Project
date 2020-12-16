@@ -19,7 +19,7 @@ namespace IRF_project_GXMRLU
             if (!ValidateEmail(senderemail))
                 throw new ValidationException(
                     "A megadott e-mail cím nem megfelelő!");
-            if (!ValidatePassword(senderphone))
+            if (!ValidatePhone(senderphone))
                 throw new ValidationException(
                     "A megadottt telefonszám nem megfelelő!\n" +
                     "A következő formátumok elfogadhatóak: 06301061811 vagy +36706227672");
@@ -40,7 +40,7 @@ namespace IRF_project_GXMRLU
                 @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         }
 
-        public bool ValidatePassword(string senderphone)
+        public bool ValidatePhone(string senderphone)
         {
             return Regex.IsMatch(
                senderphone,
