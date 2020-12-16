@@ -31,13 +31,13 @@
             this.chooseFile = new System.Windows.Forms.Button();
             this.exportBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // chooseFile
             // 
-            this.chooseFile.Location = new System.Drawing.Point(83, 78);
+            this.chooseFile.Location = new System.Drawing.Point(21, 149);
             this.chooseFile.Name = "chooseFile";
             this.chooseFile.Size = new System.Drawing.Size(158, 41);
             this.chooseFile.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // exportBtn
             // 
-            this.exportBtn.Location = new System.Drawing.Point(83, 145);
+            this.exportBtn.Location = new System.Drawing.Point(21, 216);
             this.exportBtn.Name = "exportBtn";
             this.exportBtn.Size = new System.Drawing.Size(158, 36);
             this.exportBtn.TabIndex = 1;
@@ -58,34 +58,37 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(281, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(224, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(538, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(598, 373);
             this.dataGridView1.TabIndex = 2;
             // 
-            // button1
+            // backBtn
             // 
-            this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "back to Main";
-            this.button1.UseVisualStyleBackColor = true;
+            this.backBtn.Location = new System.Drawing.Point(4, 4);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(65, 34);
+            this.backBtn.TabIndex = 3;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // UploadDataUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.exportBtn);
             this.Controls.Add(this.chooseFile);
             this.Name = "UploadDataUserControl";
-            this.Size = new System.Drawing.Size(822, 375);
+            this.Size = new System.Drawing.Size(825, 380);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -96,6 +99,6 @@
         private System.Windows.Forms.Button chooseFile;
         private System.Windows.Forms.Button exportBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backBtn;
     }
 }

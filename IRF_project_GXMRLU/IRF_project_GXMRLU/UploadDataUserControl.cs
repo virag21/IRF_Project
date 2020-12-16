@@ -160,6 +160,11 @@ namespace IRF_project_GXMRLU
 
         }
 
-
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Controls.Clear();
+            Main m = new Main();
+            Controls.Add(m);
+        }
     }
 }

@@ -35,6 +35,18 @@ namespace IRF_project_GXMRLU
         {
             return new Tree();
         }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you, Santa got your letter! Merry Christmas!");
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Controls.Clear();
+            Main m = new Main();
+            Controls.Add(m);
+        }
     }
 
 

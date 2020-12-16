@@ -12,3 +12,4 @@ C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\o
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.UploadDataUserControl.resources
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.csproj.ResolveComReference.cache
 C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.CardCreatorUC.resources
+C:\Users\Virág\source\repos\IRF_project\IRF_project_GXMRLU\IRF_project_GXMRLU\obj\Debug\IRF_project_GXMRLU.Main.resources

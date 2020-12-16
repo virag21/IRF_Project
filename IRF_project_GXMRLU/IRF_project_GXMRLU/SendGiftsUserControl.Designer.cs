@@ -46,6 +46,7 @@
             this.nameTxt = new System.Windows.Forms.TextBox();
             this.addressTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,7 +199,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(687, 322);
+            this.button1.Location = new System.Drawing.Point(670, 327);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 36);
             this.button1.TabIndex = 24;
@@ -206,11 +207,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(3, 3);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(65, 34);
+            this.backBtn.TabIndex = 25;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // SendGiftsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.nameTxt);
             this.Controls.Add(this.addressTxt);
@@ -230,7 +242,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "SendGiftsUserControl";
-            this.Size = new System.Drawing.Size(842, 375);
+            this.Size = new System.Drawing.Size(825, 380);
             ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,5 +269,6 @@
         private System.Windows.Forms.TextBox nameTxt;
         private System.Windows.Forms.TextBox addressTxt;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backBtn;
     }
 }
