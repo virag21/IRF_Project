@@ -14,24 +14,24 @@ namespace IRF_project_GXMRLU
 {
     public partial class CardCreatorUC : UserControl
     {
+        GiftBox gift;
+        Tree tree;
         public CardCreatorUC()
         {
             InitializeComponent();
-
-
-        }
+  }
 
 
 
 
-        private void treeBtn_Click_1(object sender, EventArgs e)
+        public void treeBtn_Click_1(object sender, EventArgs e)
         {
-            var tree = CreateNew();
+            this.tree = CreateNewTree();
             Controls.Add(tree);
             treeBtn.Enabled = false;
         }
 
-        public Tree CreateNew()
+        public Tree CreateNewTree()
         {
             return new Tree();
         }
@@ -42,16 +42,32 @@ namespace IRF_project_GXMRLU
             textBox1.Text = "Dear Santa!";
         }
 
+        
         private void backBtn_Click(object sender, EventArgs e)
         {
             Controls.Clear();
             Main m = new Main();
             Controls.Add(m);
         }
+
+        public void button1_Click(object sender, EventArgs e)
+        {
+            this.gift = CreateNewGift();
+            Controls.Add(gift);
+            button1.Enabled = false;
+        }
+
+        public GiftBox CreateNewGift()
+        {
+            return new GiftBox();
+        }      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            treeBtn.Enabled = true;
+            Controls.Remove (tree);
+            Controls.Remove(gift);
+        }
     }
-
-
-
-
-
-}
+    }

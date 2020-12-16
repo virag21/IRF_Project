@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Activities" />
@@ -53,6 +54,9 @@
     </Compile>
     <Compile Include="CardCreatorUC.Designer.cs">
       <DependentUpon>CardCreatorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GiftBox.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Entities\Tree.cs">
       <SubType>Component</SubType>

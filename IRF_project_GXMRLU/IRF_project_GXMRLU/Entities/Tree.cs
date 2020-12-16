@@ -18,12 +18,12 @@ namespace IRF_project_GXMRLU.Entities
             AutoSize = false;
             Width = 60;
             Height = 60;
-            Paint += Ball_Paint;
+            Paint += Tree_Paint;
             Top = 10;
             Left = 100;
         }
 
-        private void Ball_Paint(object sender, PaintEventArgs e)
+        private void Tree_Paint(object sender, PaintEventArgs e)
         {
             DrawImage(e.Graphics);
         }
