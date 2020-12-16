@@ -12,6 +12,7 @@ namespace IRF_project_GXMRLU
 {
     public partial class SendGiftsUserControl : UserControl
     {
+        private OrderChecker _controller = new OrderChecker();
         public SendGiftsUserControl()
         {
             InitializeComponent();
@@ -21,9 +22,9 @@ namespace IRF_project_GXMRLU
         {
             ComboBox cb = new ComboBox();
             Controls.Add(cb);
-            cb.Width = giftTxt.Width;
+            cb.Width = giftCombo.Width;
             cb.Top = addNew.Top + 25;
-            cb.Left = giftTxt.Left;
+            cb.Left = giftCombo.Left;
             NumericUpDown nu = new NumericUpDown();
             Controls.Add(nu);
             nu.Width = quantityUpDown.Width;
@@ -34,16 +35,16 @@ namespace IRF_project_GXMRLU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Successful");
-            Order o = new Order();
-            o.Sender = senderTxt.Text;
-            o.SenderEmail = senderEmailTxt.Text;
-            o.SenderPhone = senderPhoneTxt.Text;
-            o.Name = nameTxt.Text;
-            o.Address = addressTxt.Text;
-            o.Gift = giftTxt.Text;
-            o.Quantity = (int)quantityUpDown.Value;
-
+            try
+            {
+                _controller.Register(
+                    senderPhoneTxt.Text,
+                    senderEmailTxt.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 

@@ -37,7 +37,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.giftTxt = new System.Windows.Forms.ComboBox();
+            this.giftCombo = new System.Windows.Forms.ComboBox();
             this.quantityUpDown = new System.Windows.Forms.NumericUpDown();
             this.addNew = new System.Windows.Forms.Button();
             this.senderPhoneTxt = new System.Windows.Forms.TextBox();
@@ -131,13 +131,24 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Choose presents:";
             // 
-            // giftTxt
+            // giftCombo
             // 
-            this.giftTxt.FormattingEnabled = true;
-            this.giftTxt.Location = new System.Drawing.Point(195, 251);
-            this.giftTxt.Name = "giftTxt";
-            this.giftTxt.Size = new System.Drawing.Size(121, 28);
-            this.giftTxt.TabIndex = 16;
+            this.giftCombo.FormattingEnabled = true;
+            this.giftCombo.Items.AddRange(new object[] {
+            "book",
+            "band T-shirt",
+            "teddy bear",
+            "cushion",
+            "mug",
+            "socks",
+            "Monopoly",
+            "candle",
+            "gift card",
+            "puzzle"});
+            this.giftCombo.Location = new System.Drawing.Point(195, 251);
+            this.giftCombo.Name = "giftCombo";
+            this.giftCombo.Size = new System.Drawing.Size(121, 28);
+            this.giftCombo.TabIndex = 16;
             // 
             // quantityUpDown
             // 
@@ -231,7 +242,7 @@
             this.Controls.Add(this.senderPhoneTxt);
             this.Controls.Add(this.addNew);
             this.Controls.Add(this.quantityUpDown);
-            this.Controls.Add(this.giftTxt);
+            this.Controls.Add(this.giftCombo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -260,7 +271,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox giftTxt;
+        private System.Windows.Forms.ComboBox giftCombo;
         private System.Windows.Forms.NumericUpDown quantityUpDown;
         private System.Windows.Forms.Button addNew;
         private System.Windows.Forms.TextBox senderPhoneTxt;
