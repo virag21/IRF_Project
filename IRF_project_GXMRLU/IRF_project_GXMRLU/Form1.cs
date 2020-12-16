@@ -31,5 +31,12 @@ namespace IRF_project_GXMRLU
             UploadDataUserControl up = new UploadDataUserControl();
             panel1.Controls.Add(up);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UploadDataUserControl cs = new UploadDataUserControl();
+            panel1.Controls.Add(cs);
+        }
     }
 }

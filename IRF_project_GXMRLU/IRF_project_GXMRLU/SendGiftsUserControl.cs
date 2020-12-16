@@ -21,28 +21,32 @@ namespace IRF_project_GXMRLU
         {
             ComboBox cb = new ComboBox();
             Controls.Add(cb);
-            cb.Width = comboBox1.Width;
+            cb.Width = giftTxt.Width;
             cb.Top = addNew.Top + 25;
-            cb.Left = comboBox1.Left;
+            cb.Left = giftTxt.Left;
             NumericUpDown nu = new NumericUpDown();
             Controls.Add(nu);
-            nu.Width = numericUpDown1.Width;
+            nu.Width = quantityUpDown.Width;
             nu.Top = addNew.Top + 25;
-            nu.Left = numericUpDown1.Left;
+            nu.Left = quantityUpDown.Left;
             addNew.Top = addNew.Top + 25;
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Successful");
+            Order o = new Order();
+            o.Sender = senderTxt.Text;
+            o.SenderEmail = senderEmailTxt.Text;
+            o.SenderPhone = senderPhoneTxt.Text;
+            o.Name = nameTxt.Text;
+            o.Address = addressTxt.Text;
+            o.Gift = giftTxt.Text;
+            o.Quantity = (int)quantityUpDown.Value;
+
+
         }
 
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

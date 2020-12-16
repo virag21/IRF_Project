@@ -37,23 +37,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.giftTxt = new System.Windows.Forms.ComboBox();
+            this.quantityUpDown = new System.Windows.Forms.NumericUpDown();
             this.addNew = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.senderPhoneTxt = new System.Windows.Forms.TextBox();
+            this.senderEmailTxt = new System.Windows.Forms.TextBox();
+            this.senderTxt = new System.Windows.Forms.TextBox();
+            this.nameTxt = new System.Windows.Forms.TextBox();
+            this.addressTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -113,11 +106,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(220, 196);
+            this.label7.Location = new System.Drawing.Point(256, 196);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 20);
+            this.label7.Size = new System.Drawing.Size(68, 20);
             this.label7.TabIndex = 13;
-            this.label7.Text = "City";
+            this.label7.Text = "Address";
             // 
             // label8
             // 
@@ -137,25 +130,25 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Choose presents:";
             // 
-            // comboBox1
+            // giftTxt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(195, 251);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 16;
+            this.giftTxt.FormattingEnabled = true;
+            this.giftTxt.Location = new System.Drawing.Point(195, 251);
+            this.giftTxt.Name = "giftTxt";
+            this.giftTxt.Size = new System.Drawing.Size(121, 28);
+            this.giftTxt.TabIndex = 16;
             // 
-            // numericUpDown1
+            // quantityUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(348, 252);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.quantityUpDown.Location = new System.Drawing.Point(348, 252);
+            this.quantityUpDown.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(51, 26);
-            this.numericUpDown1.TabIndex = 17;
+            this.quantityUpDown.Name = "quantityUpDown";
+            this.quantityUpDown.Size = new System.Drawing.Size(51, 26);
+            this.quantityUpDown.TabIndex = 17;
             // 
             // addNew
             // 
@@ -167,40 +160,40 @@
             this.addNew.UseVisualStyleBackColor = true;
             this.addNew.Click += new System.EventHandler(this.addNew_Click);
             // 
-            // textBox1
+            // senderPhoneTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(363, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 19;
+            this.senderPhoneTxt.Location = new System.Drawing.Point(363, 117);
+            this.senderPhoneTxt.Name = "senderPhoneTxt";
+            this.senderPhoneTxt.Size = new System.Drawing.Size(100, 26);
+            this.senderPhoneTxt.TabIndex = 19;
             // 
-            // textBox2
+            // senderEmailTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(593, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 20;
+            this.senderEmailTxt.Location = new System.Drawing.Point(593, 117);
+            this.senderEmailTxt.Name = "senderEmailTxt";
+            this.senderEmailTxt.Size = new System.Drawing.Size(100, 26);
+            this.senderEmailTxt.TabIndex = 20;
             // 
-            // textBox3
+            // senderTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(111, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 21;
+            this.senderTxt.Location = new System.Drawing.Point(111, 117);
+            this.senderTxt.Name = "senderTxt";
+            this.senderTxt.Size = new System.Drawing.Size(100, 26);
+            this.senderTxt.TabIndex = 21;
             // 
-            // textBox4
+            // nameTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(114, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 23;
+            this.nameTxt.Location = new System.Drawing.Point(114, 193);
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.Size = new System.Drawing.Size(100, 26);
+            this.nameTxt.TabIndex = 23;
             // 
-            // textBox5
+            // addressTxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(257, 193);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 22;
+            this.addressTxt.Location = new System.Drawing.Point(328, 193);
+            this.addressTxt.Name = "addressTxt";
+            this.addressTxt.Size = new System.Drawing.Size(100, 26);
+            this.addressTxt.TabIndex = 22;
             // 
             // button1
             // 
@@ -213,85 +206,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(443, 193);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(57, 26);
-            this.textBox6.TabIndex = 26;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(369, 196);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 20);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "Zip code";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(520, 196);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 20);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Street";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(579, 193);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 26);
-            this.textBox8.TabIndex = 28;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(368, 196);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(70, 20);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Zip code";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(752, 193);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(57, 26);
-            this.textBox7.TabIndex = 30;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(689, 196);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 20);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Number";
-            // 
             // SendGiftsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameTxt);
+            this.Controls.Add(this.addressTxt);
+            this.Controls.Add(this.senderTxt);
+            this.Controls.Add(this.senderEmailTxt);
+            this.Controls.Add(this.senderPhoneTxt);
             this.Controls.Add(this.addNew);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.quantityUpDown);
+            this.Controls.Add(this.giftTxt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -303,7 +231,7 @@
             this.Controls.Add(this.label2);
             this.Name = "SendGiftsUserControl";
             this.Size = new System.Drawing.Size(842, 375);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,21 +248,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ComboBox giftTxt;
+        private System.Windows.Forms.NumericUpDown quantityUpDown;
         private System.Windows.Forms.Button addNew;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox senderPhoneTxt;
+        private System.Windows.Forms.TextBox senderEmailTxt;
+        private System.Windows.Forms.TextBox senderTxt;
+        private System.Windows.Forms.TextBox nameTxt;
+        private System.Windows.Forms.TextBox addressTxt;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label11;
     }
 }
